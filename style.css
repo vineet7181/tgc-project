@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat,sans-serif;
+    
+    
+    line-height: 1.75em;
+    font-size: 15px
+}
+header{
+    display: flex;
+    /* background-color: palevioletred; */
+    justify-content: space-between;
+    padding: 0 2%;
+    height: 70px;
+    box-shadow: 2px 2px 10px grey
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+nav ul li{
+ display:inline-block;
+ line-height: 3;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding:0 20px;
+}
+
+#banner{
+     background-color: rgb(9,174,234);
+     height: 500px;
+}
+#banner .parent-container{
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+
+}
+#banner .child-container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .child-container1 .text{
+    padding-right:150px;
+    margin-left: 70px;
+}
+#banner .text h1{
+    font-size: 44px;
+    font-family: montserrat,sans-serif;
+    
+    color:white;
+    line-height: 1.3em;
+    margin: 90px 0 0;
+}
+ #banner .text p{
+    color: #f5f5f5;
+    font-weight: 400;
+    font-family:montserrat,sans-serif ;
+    margin: 15px 0 30px;
+    line-height: 1.5;
+ }
+#banner .text .buttons a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 18px;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+    border-radius: 8px;
+    margin-right: 8px;
+    border: none;
+    margin-right: 10px;
+    
+}
+#banner .buttons a:hover{
+    background-color: palevioletred;
+}
+
+#banner .child-container2{
+         display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin-top: 50px;
+        margin-right: 50px;
+}
+#banner .image{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0, 0.18);
+    margin: 30px;
+}
+
+
+#banner .child-container2 .image img{
+    width: 600px;
+}
+
+#Services{
+    z-index: 1;
+    margin-top: 50px;
+}
+
+#Services h2{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+}
+.parent-container2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-top: 100px; */
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 80px;
+    
+}
+#Services .child-services{
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.child-services .icon{
+    text-align: center;
+    width: 100%;
+    max-width: 120px;
+    height: 100%;
+    max-height: 120px;
+    min-height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 80px;
+    box-shadow: 0 0 25px rgba(0,0,0, 0.18);
+
+
+}
+.child-services .icon img{
+    max-width: 68px;
+    margin-top: 26px;
+}
+#Services h4{
+    text-align: center;
+}
+#Services p{
+    text-align: center;
+}
+
+
+#demo{
+    background-color:rgb(244,244,244);
+    height: 500px;
+}
+
+
+#demo .parent-demo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    /* margin: auto; */
+}
+
+#demo .parent-demo .child-demo{
+
+    padding-right: 100px;
+    padding-left: 40px;
+}
+#demo .parent-demo .child-demo h2{
+    color: #222;
+    font-size: 45px;
+    margin: 210px 30px 40px 0;
+    line-height: 1.3em;
+    padding-left: 50px;
+    font-family: sans-serif;
+
+}
+span{
+    color: rgb(9,174,234);
+}
+
+
+.blue{
+    color: rgb(9,174,234);
+}
+/* .image-demo{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0, 0.18);
+} */
+#demo .parent-demo .child-demo .image-demo{
+  
+    display: block;
+    width: 100%;
+    margin: 65px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 20px solid #fff;
+   
+    box-shadow: 0 0 25px 0 rgb(0 0 0 / 18%);
+}
+
+
+#demo .parent-demo .child-demo .image-demo img{
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    border: 1px solid #f5f5f5;
+
+}
+
+@media only screen and (max-width:600px){
+    #banner {
+        height: 1000px;
+    }
+    #banner .parent-container{
+        display: flex;
+        flex-wrap:wrap;
+        
+    }
+    #banner .child-container2{
+        width: 100%;
+        
+    }
+    #banner .child-container2 .image img{
+        width: 100%;
+    }
+    .text{
+        text-align: center;
+    }
+    .parent-demo{
+        display: flex;
+        flex-wrap:wrap;
+    }
+    #demo{
+        height: 1000px;
+    }
+
+    .footer-nav h2{
+        flex-direction: column;
+    }
+   .footer-nav li{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+   }
+   .end{
+    height: 500px;
+   }
+  
+}
+@media only screen and (min-width:600px){
+    #banner {
+        height: 700px;
+    }
+    #demo{
+        height: 600px;
+    }
+   
+   
+    #banner .child-container2 .image img{
+        width: 100%;
+       
+       
+
+    }
+  
+    
+  
+}
+/* unique demoo */
+
+
+.unique h1{
+    text-align: center;
+    font-size: 60px;
+    margin: 50px;
+    
+}
+#unique .unique-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: auto;
+    gap: 30px;
+}
+#unique img{
+    width: 250px;
+}
+#unique .img-unique{
+    width: 300px;
+    height: 200px;
+    
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 0 25px 0 rgba(0,0,0, 0.18);
+
+}
+#unique a{
+    text-decoration: none;
+}
+
+#unique h2{
+    margin-top: 10px;
+    color: black;
+    
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.end{
+    background-color: #222;
+    width: 100%;
+    height: 320px;
+    margin-top: 40px;
+}
+.end-text{
+    text-align: center;
+    color: green;
+    padding: 50px;
+}
+.end-logo{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    color: #f5f5f5;
+}
+.end-logo a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.end-logo a i{
+    font-size: 1em;
+    color: black;
+    opacity: 0.9;
+}
+.end-logo a:hover{
+    background-color: #222;
+    transition: 0.5s;
+}
+
+.end-logo a i:hover{
+    color: white;
+    transition: 0.5s;
+}
+.footer-nav-parent .footer-nav{
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.footer-nav{
+    color: #fff;
+    
+}
+.icon :hover{
+    transform: scale(1.3);
+}
+.end-text :hover{
+    color: palevioletred;
+    
+}
+
+.child-container2:hover{
+    transform: scale(1.1);
+}
+
